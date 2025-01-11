@@ -1,0 +1,32 @@
+module RecycleMetal
+{
+  recipe Make Scrap Metal
+  {
+    keep [Recipe.GetItemTypes.WeldingMask],
+    Base.BlowTorch=2,
+    Base.BeerCanEmpty/Base.PopEmpty/Base.Pop2Empty/Base.Pop3Empty/Base.TinCanEmpty=100,
+
+    NoBrokenItems:true,
+    Result:Base.ScrapMetal,
+    Time:500.0,
+    Category:Recycling,
+    SkillRequired:MetalWelding=4,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Scrap Metal
+  {
+    keep [Recipe.GetItemTypes.WeldingMask],
+    Base.BlowTorch=2,
+    Base.UnusableMetal=20,
+
+    NoBrokenItems:true,
+    Result:Base.ScrapMetal,
+    Time:500.0,
+    Category:Recycling,
+    SkillRequired:MetalWelding=4,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+}

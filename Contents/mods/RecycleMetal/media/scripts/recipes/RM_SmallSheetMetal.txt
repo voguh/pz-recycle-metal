@@ -1,0 +1,17 @@
+module RecycleMetal
+{
+  recipe Make Small Metal Sheet
+  {
+    keep [Recipe.GetItemTypes.WeldingMask],
+    Base.BlowTorch=2,
+    Base.ScrapMetal=10,
+
+    NoBrokenItems:true,
+    Result:Base.SmallSheetMetal,
+    Time:500.0,
+    Category:Welding,
+    SkillRequired:MetalWelding=4,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+}
