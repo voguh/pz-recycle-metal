@@ -1,0 +1,13 @@
+version=1
+id=3396129125
+title=Recycle Metal
+description=This simple mod just add a recipe to recycle some metal things.
+description=
+description=
+description=
+description=This item is not authorized for posting on Steam, except under the Steam account named Voguh.
+description=[code]
+description=This project is under GNU LESSER GENERAL PUBLIC LICENSE, Version 3.
+description=[/code]
+tags=Build 41;Items
+visibility=friendsOnly
